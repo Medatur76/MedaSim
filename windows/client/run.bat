@@ -4,9 +4,11 @@ if not exist "bin" mkdir "bin"
 
 gcc -c main.c -o ./bin/main.obj
 
+g++ -c src/shaders.cpp -o ./bin/shaders.obj
+
 cd bin
 
-gcc main.obj -o program.exe -mwindows -lgdi32
+g++ main.obj shaders.obj -o program.exe -mwindows -lgdi32
 
 cd ..
 

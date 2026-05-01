@@ -8,6 +8,6 @@ cd bin
 
 gcc main.obj -o program.exe -mwindows -lgdi32
 
-"./program.exe"
-
 cd ..
+
+"./program.exe"

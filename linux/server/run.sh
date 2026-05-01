@@ -1,8 +1,8 @@
 [ ! -d "./bin" ] && mkdir ./bin
 
-aarch64-linux-gnu-gcc -I../include -I./include -c main.c -o ./bin/main.obj
+aarch64-linux-gnu-gcc -I./include -c main.c -o ./bin/main.obj
 
-aarch64-linux-gnu-as ../src/defaults.asm -o ./bin/defaults.obj
+aarch64-linux-gnu-as src/defaults.asm -o ./bin/defaults.obj
 
 cd bin
 
